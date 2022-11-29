@@ -43,7 +43,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public void updateEmployee(Employee employee) {
+    public void updateEmployee(EmployeeDto employeeDto) {
+        Employee employee = employeeMapper.convertEmployeeRq(employeeDto);
         employeeDao.updateEmployee(employee);
     }
 }

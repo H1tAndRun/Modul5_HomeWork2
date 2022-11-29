@@ -8,6 +8,8 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 public class EmployeeDto {
 
+    private Integer id;
+
     private String name;
 
     private Integer age;

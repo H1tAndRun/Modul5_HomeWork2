@@ -14,5 +14,5 @@ public interface EmployeeService {
 
     Employee getEmployeeById(Integer id);
 
-    void updateEmployee(Employee employee);
+    void updateEmployee(EmployeeDto employeeDto);
 }

@@ -8,6 +8,8 @@ import org.springframework.stereotype.Component;
 public class EmployeeMapper {
 
     public Employee convertEmployeeRq(EmployeeDto employeeDtoRq) {
-        return new Employee(employeeDtoRq.getName(),employeeDtoRq.getAge(),employeeDtoRq.getSalary());
+        Employee employee = new Employee(employeeDtoRq.getName(),employeeDtoRq.getAge(),employeeDtoRq.getSalary());
+        employee.setId(employeeDtoRq.getId());
+        return employee;
     }
 }
